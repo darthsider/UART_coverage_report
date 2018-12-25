@@ -1,0 +1,35 @@
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <link rel="StyleSheet" media="screen" href="../css/hdl2html.css"/>
+</head>
+<body id="hdl2html">
+  <tt><a name="1"/><span style="color:red">%s%%s%%s%%s%%s%1%s%%s%</span>%s%%s%<span class="keyword">class</span>%s%uart_gen;<br/>
+<a name="2"/><span style="color:red">%s%%s%%s%%s%%s%2%s%%s%</span>%s%%s%%s%<br/>
+<a name="3"/><span style="color:red">%s%%s%%s%%s%%s%3%s%%s%</span>%s%%s%%s%<span class="keyword">rand</span>%s%uart_trans%s%trans;<br/>
+<a name="4"/><span style="color:red">%s%%s%%s%%s%%s%4%s%%s%</span>%s%%s%%s%mailbox%s%gen2driv;<br/>
+<a name="5"/><span style="color:red">%s%%s%%s%%s%%s%5%s%%s%</span>%s%%s%%s%<span class="keyword">int</span>%s%repeat_count;<br/>
+<a name="6"/><span style="color:red">%s%%s%%s%%s%%s%6%s%%s%</span>%s%%s%%s%<span class="keyword">event</span>%s%ended;<br/>
+<a name="7"/><span style="color:red">%s%%s%%s%%s%%s%7%s%%s%</span>%s%%s%%s%<br/>
+<a name="8"/><span style="color:red">%s%%s%%s%%s%%s%8%s%%s%</span>%s%%s%%s%<span class="keyword">function</span>%s%<span class="keyword">new</span>(mailbox%s%gen2driv,<span class="keyword">event</span>%s%ended);<br/>
+<a name="9"/><span style="color:red">%s%%s%%s%%s%%s%9%s%%s%</span>%s%%s%%s%%s%%s%<span class="keyword">this</span>.gen2driv%s%=%s%gen2driv;<br/>
+<a name="10"/><span style="color:red">%s%%s%%s%%s%10%s%%s%</span>%s%%s%%s%%s%%s%<span class="keyword">this</span>.ended%s%=%s%ended;<br/>
+<a name="11"/><span style="color:red">%s%%s%%s%%s%11%s%%s%</span>%s%%s%%s%<span class="keyword">endfunction</span><br/>
+<a name="12"/><span style="color:red">%s%%s%%s%%s%12%s%%s%</span>%s%%s%%s%<br/>
+<a name="13"/><span style="color:red">%s%%s%%s%%s%13%s%%s%</span>%s%%s%%s%<span class="keyword">task</span>%s%main;<br/>
+<a name="14"/><span style="color:red">%s%%s%%s%%s%14%s%%s%</span>%s%%s%%s%%s%%s%<span class="keyword">repeat</span>(repeat_count)%s%<span class="keyword">begin</span><br/>
+<a name="15"/><span style="color:red">%s%%s%%s%%s%15%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%trans%s%=%s%<span class="keyword">new</span>();<br/>
+<a name="16"/><span style="color:red">%s%%s%%s%%s%16%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%<span class="keyword">if</span>(!trans.randomize())%s%$fatal(<span class="literal">"Randomization%s%failed"</span>);<br/>
+<a name="17"/><span style="color:red">%s%%s%%s%%s%17%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%%s%%s%gen2driv.put(trans);<br/>
+<a name="18"/><span style="color:red">%s%%s%%s%%s%18%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%<span class="keyword">end</span><br/>
+<a name="19"/><span style="color:red">%s%%s%%s%%s%19%s%%s%</span>%s%%s%%s%%s%%s%%s%%s%-&gt;%s%ended;<br/>
+<a name="20"/><span style="color:red">%s%%s%%s%%s%20%s%%s%</span>%s%%s%%s%%s%%s%<span class="keyword">endtask</span><br/>
+<a name="21"/><span style="color:red">%s%%s%%s%%s%21%s%%s%</span>%s%%s%%s%%s%%s%<br/>
+<a name="22"/><span style="color:red">%s%%s%%s%%s%22%s%%s%</span>%s%%s%%s%<span class="keyword">endclass</span><br/>
+</tt>
+<script type="text/javascript" src="../scripts/buildsrcpage.js"></script>
+  
+</body>
+</html>
